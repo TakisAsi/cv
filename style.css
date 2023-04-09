@@ -1,0 +1,354 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  font-size: 14px;
+  font-family: 'Poppons' , sans-serif;
+}
+body{
+  height: 100%;
+}
+#about {
+  background-color: #0d0d0d;
+  padding: 100px 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f44336;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  margin-left: 100px;
+}
+
+
+/* Projects Section */
+#projects hr {
+  border-color: #fff;
+  margin: 30px auto;
+  width: 50px;
+  border-width: 3px;
+}
+
+
+.projects {
+  padding: 100px 0;
+}
+
+.projects .card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  background-color: #212429;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects .card:hover {
+  transform: scale(1.1);
+}
+
+.projects .card .card-background {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects .card .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  filter: blur(0px);
+}
+
+.projects .card .content:hover {
+  transform: translateY(-100%);
+}
+
+.projects .card .card-category {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.projects .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects .card:hover .card-background {
+  transform: scale(1.1);
+}
+
+.projects .card.blur .card-background {
+  filter: blur(5px);
+}
+
+@media (min-width: 992px) {
+  .projects .card {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+
+
+
+  #skills {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 80px 0;
+  }
+  
+  #skills h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  #skills hr {
+    border-color: #fff;
+    margin: 30px auto;
+    width: 50px;
+    border-width: 3px;
+  }
+  
+  #skills .card {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  #skills .card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  #skills .progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+  
+  #skills .progress-bar {
+    background-color: #fff;
+    transition: width 0.6s ease;
+  }
+  
+  #skills .progress-html5 .progress-bar {
+    width: 90%;
+  }
+  
+  #skills .progress-css3 .progress-bar {
+    width: 85%;
+  }
+  
+  #skills .progress-js .progress-bar {
+    width: 80%;
+  }
+  
+  #skills .progress-php .progress-bar {
+    width: 70%;
+  }
+  
+  #skills .progress-python .progress-bar {
+    width: 65%;
+  }
+  
+  #skills .progress-git .progress-bar {
+    width: 75%;
+  }
+  
+  .progress-bar {
+    animation: progress-bar-animation 10s ease forwards;
+  }
+  
+  @keyframes progress-bar-animation {
+    from { width: 0; }
+    to { width: var(--progress-width); }
+  }
+  
+
+  
+  @media (min-width: 768px) {
+    #skills .card {
+      margin-bottom: 0;
+    }
+  }
+
+  #contact {
+    background-color: #212429;
+    padding: 100px 0;
+    color: #fff;
+  }
+  
+  
+  #contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  #contact form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #contact hr {
+    border-color: #fff;
+    margin: 30px auto;
+    width: 50px;
+    border-width: 3px;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  #contact input[type="text"]:focus,
+  #contact input[type="email"]:focus,
+  #contact textarea:focus {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  #contact button[type="submit"] {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #212429;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background-color: #64686e;
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (min-width: 768px) {
+    #contact h2 {
+      font-size: 48px;
+    }
+    
+    #contact form {
+      padding: 60px;
+    }
+  }
+ 
+  footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .social-icons i {
+    line-height: 50px;
+  }
+
+  #scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    }
+
+    #scroll-to-top-btn:hover {
+        background-color: #555;
+        }
+
+        #slider {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .slider {
+            width: 100%;
+        }
+        
+        .slider img {
+            width: 100%;
+        }
+        
+  
