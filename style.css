@@ -12,12 +12,47 @@ html{
 body{
   height: 100%;
 }
+/* navbar */
+@media (max-width: 992px) {
+  .navbar-brand {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+  }
+  .navbar-nav > li > .nav-link {
+    padding: 10px;
+    margin-right: 0;
+    line-height: 1.5;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-collapse.show {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    padding: 10px;
+  }
+  
+}
 #about {
   background-color: #0d0d0d;
   padding: 100px 0;
   color: #fff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Αλλαγή σε flex-direction row */
   align-items: center;
 }
 
@@ -43,6 +78,7 @@ body{
   line-height: 24px;
   margin-bottom: 30px;
   text-align: center;
+  order: 1;
 }
 
 .profile-img {
@@ -50,8 +86,29 @@ body{
   max-width: 400px;
   border-radius: 50%;
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-  margin-left: 100px;
+  text-align: center;
+  order: 2;
 }
+
+
+
+@media (max-width: 767px) {
+  .profile-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .prof-im {
+  order: -1;
+  margin-top: 30px;
+  }
+  }
+
+
+
 
 
 /* Projects Section */
@@ -215,7 +272,7 @@ body{
   
 
   
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     #skills .card {
       margin-bottom: 0;
     }
@@ -284,7 +341,7 @@ body{
     transition: background-color 0.3s ease;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     #contact h2 {
       font-size: 48px;
     }
@@ -338,7 +395,7 @@ body{
         background-color: #555;
         }
 
-        #slider {
+     #slider {
             width: 100%;
             margin: 0 auto;
         }
@@ -351,4 +408,7 @@ body{
             width: 100%;
         }
         
-  
+        .bg-color {
+          background-color: #e70606;
+          color: #000000;
+        }

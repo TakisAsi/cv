@@ -70,3 +70,36 @@ if (response.ok) {
     });
     });
     });
+
+    const themeToggle = document.querySelector("#theme-toggle");
+    const icon = document.querySelector(".fas");
+    
+    themeToggle.addEventListener("click", function() {
+      if (icon.classList.contains("fa-moon")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+      }
+    });
+
+    
+    const aboutDiv = document.querySelector('.about');
+    const bColorBtn = document.querySelector('.b-color');
+    
+    let isWhite = false;
+    
+   /* bColorBtn.addEventListener('click', function() {
+      if (isWhite) {
+        aboutDiv.style.backgroundColor = '';
+        isWhite = false;
+      } else {
+        aboutDiv.style.backgroundColor = 'white';
+        isWhite = true;
+      }
+    });*/
+
+
+ 
+  

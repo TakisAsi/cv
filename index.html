@@ -15,51 +15,56 @@
     
 </head>
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-              Panagiotis Asimakopoulos
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">My Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">My Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact Me</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          Panagiotis Asimakopoulos
+        </a>
+        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-dark" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+        <button class="b-color btn btn-light d-flex align-items-center justify-content-center" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  
 
     <main>
         <!-- About Me Section -->
-        <section id="about">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <h2 class="section-title">About Me</h2>
-                  <p class="section-subtitle">Get to know me</p>
-                  <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales mi at lectus interdum, eget posuere ex tempor. Morbi tincidunt aliquet nisi, sed consectetur lorem facilisis eget. Nullam feugiat posuere odio, id imperdiet tortor congue ac. Etiam consectetur sem et felis feugiat, a laoreet nibh tristique. Sed auctor bibendum tortor in vehicula. Sed quis justo vel magna blandit egestas ut non velit. In vel pulvinar lectus. Proin at hendrerit metus. Praesent vitae velit vel nisl rhoncus malesuada. Nullam scelerisque ex in lacinia imperdiet.</p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <img src="myim.jpg" alt="Profile Picture" class="profile-img">
-                </div>
+        <section id="about" class="about">
+          <div class="container">
+            <div class="row">
+              <div class="profile-text col-lg-6 col-md-6 col-sm-12">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me</p>
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales mi at lectus interdum, eget posuere ex tempor. Morbi tincidunt aliquet nisi, sed consectetur lorem facilisis eget. Nullam feugiat posuere odio, id imperdiet tortor congue ac. Etiam consectetur sem et felis feugiat, a laoreet nibh tristique. Sed auctor bibendum tortor in vehicula. Sed quis justo vel magna blandit egestas ut non velit. In vel pulvinar lectus. Proin at hendrerit metus. Praesent vitae velit vel nisl rhoncus malesuada. Nullam scelerisque ex in lacinia imperdiet.</p>  
               </div>
+              <div class="prof-im col-lg-6 col-md-6 col-sm-12">
+                <center><img src="myim.jpg" alt="Profile Picture" class="profile-img"></center>
+                </div>
             </div>
-          </section>
+          </div>
+        </section>
           
   
           
@@ -69,8 +74,8 @@
             <h2 class="text-center text-white mb-4">My Projects</h2>
             <hr>
             <div class="row">
-              <div class="col-lg-2 col-md-6"></div>
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
                   <a href="https://blancnoir.gr/" target="_blank">
                     <div class="card-background" style="background-image: url(blancnoir.jpg);"></div>
@@ -80,7 +85,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
                   <a href="#" target="_blank">
                     <div class="card-background" style="background-image: url(ritishoney.jpg);"></div>
@@ -95,7 +100,7 @@
         </section>
         
         <!-- Skills Section -->
-        <section id="skills">
+        <section id="skills" class="skills">
             <div class="container">
               <h2 class="text-center">My Skills</h2>
               <hr>
@@ -170,7 +175,7 @@
 
           
         <!-- Contact Section Code Goes Here -->
-        <section id="contact">
+        <section id="contact" class="contact">
           <div class="container">
             <h2 class="text-center mb-5">Get in Touch</h2>
             <hr>
@@ -208,7 +213,7 @@
 
     <footer>
         <!-- Footer Code Goes Here -->
-        <div class="container">
+        <div class="container footer">
             <div class="row">
               <div class="col-md-6">
                 <p>&copy; 2023 My Website</p>
@@ -234,6 +239,16 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0pK"
         crossorigin="anonymous"></script>
     <!-- Custom JS -->
-    <script src="script.js"></script>
+    
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+<!-- Κώδικας JavaScript για ενεργοποίηση του κουμπιού μενού -->
+
+<script src="script.js"></script>
+
 </body>
 </html>
