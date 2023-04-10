@@ -13,7 +13,7 @@ body{
   height: 100%;
 }
 /* navbar */
-@media (max-width: 776px) {
+@media (max-width: 767px) {
   .navbar-brand {
     display: block;
     text-align: center;
@@ -100,7 +100,7 @@ body{
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   .prof-im {
   order: -1;
   margin-top: 30px;
@@ -272,7 +272,7 @@ body{
   
 
   
-  @media (min-width: 992px) {
+  @media (min-width: 767px) {
     #skills .card {
       margin-bottom: 0;
     }
@@ -341,7 +341,7 @@ body{
     transition: background-color 0.3s ease;
   }
   
-  @media (min-width: 992px) {
+  @media (min-width: 767px) {
     #contact h2 {
       font-size: 48px;
     }
