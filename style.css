@@ -13,7 +13,7 @@ body{
   height: 100%;
 }
 /* navbar */
-@media (max-width: 992px) {
+@media (max-width: 776px) {
   .navbar-brand {
     display: block;
     text-align: center;
